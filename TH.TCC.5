@@ -1,0 +1,216 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled3.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyNa9LttwDpkCI36p1nNq+QS",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/khang666/TCC.TH/blob/main/TH.TCC.5\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "TH.1\n"
+      ],
+      "metadata": {
+        "id": "ktvs94VYLkMB"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 4,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1ZcsnXgUKG0d",
+        "outputId": "ffd4c46a-b697-4875-c8a3-e25a71502f37"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n"
+          ]
+        }
+      ],
+      "source": [
+        "x=3\n",
+        "print(x)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import math\n",
+        "x = math.sqrt(1+x)\n",
+        "print(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2UPKqfOgLsu3",
+        "outputId": "504406ef-23f8-4ad5-8621-b71b16292ccf"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "x = math.sqrt(1+x)\n",
+        "print(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QdwP164hMP7Q",
+        "outputId": "51bea9ec-eba7-4990-dc8f-d62dcf81c322"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1.6287699807772333\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = math.sqrt(1+x)\n",
+        "print(x)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "i8g7o37lMoBN",
+        "outputId": "370a29fa-4a58-41e9-830a-5b3052ec51c6"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1.621348198499395\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "TH.2"
+      ],
+      "metadata": {
+        "id": "DRdpZ-GAM8nV"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import math\n",
+        "x = 3\n",
+        "lap =1 \n",
+        "while (x!=math.sqrt(x+1)):\n",
+        "  x = math.sqrt(x+1)\n",
+        "  lap = lap+1\n",
+        "print(x)\n",
+        "print(lap)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4kT8dUURMoHE",
+        "outputId": "2257e4d9-f67d-40c2-faab-220ee367f412"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1.618033988749895\n",
+            "32\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "TH.3"
+      ],
+      "metadata": {
+        "id": "op5j3dBaQtvo"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import sympy as sp\n",
+        "from sympy import Symbol\n",
+        "x= Symbol('x')\n",
+        "sp.solve(x-sp.sqrt(1+x),x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rEAz9T-CNs89",
+        "outputId": "4fe40234-f376-480b-ca55-5f550ce6f64a"
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[1/2 + sqrt(5)/2]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 27
+        }
+      ]
+    }
+  ]
+}
